@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circulo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+body{
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(192, 175, 153);
+    color: white;
+}
+
+header{
+    text-align: center;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#inicio{
+    width: 10%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 62, 14);
+    color: rgb(0, 0, 0);
+    border: white ;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    }
+
+a:hover{
+        color: rgb(82, 77, 77);
+        transition: 0,3s;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    width: 60%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+img{
+    width: 20%;
+    height: 250px;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    align-items: center;
+}
+
+
+
+</style>
+
+<body>
+    <header>
+        <h1>Circulo:</h1>
+        <button id="inicio"><a href="index.html">Inicio</a></button>
+    </header>
+    <main>
+        <p>O círculo é uma figura que pertence à geometria plana e é formada por um conjunto de pontos dentro do plano, cuja superfície é limitada por uma circunferência. Dito isso, a circunferência, por sua vez, corresponde ao espaço geométrico de uma região circular.</p>
+    </main>
+    <aside>
+        <img src="imagens/circulo.png" alt="circulo vermelho/red circle">
+    </aside>
+
+    <button onclick="calcular_circulo()">Calcular</button>
+
+    <p> O valor da área do circulo é <span id="texto-circulo"></span></p>
+    
+
+    <script src="js/circulo.js"></script>
+</body>
+
+</html>

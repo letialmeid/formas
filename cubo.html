@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body{
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(192, 175, 153);
+    color: white;
+}
+
+header{
+    text-align: center;
+    color: rgb(4, 0, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#inicio{
+    width: 10%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(57, 16, 236);
+    color: rgb(0, 0, 0);
+    border: white ;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    }
+
+a:hover{
+        color: rgb(82, 77, 77);
+        transition: 0,3s;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    width: 60%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+img{
+    width: 20%;
+    height: 250px;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    align-items: center;
+}
+</style>
+
+<body>
+    <header>
+        <h1>Triangulo:</h1>
+        <button id="inicio"><a href="index.html">Inicio</a></button>
+    </header>
+    <main>
+        <p>Conhecido também como hexaedro, o cubo é o sólido geométrico que possui todas as faces formadas por quadrados. Possui 6 faces, 12 arestas e 8 vértices. </p>
+    </main>
+    <aside>
+        <img src="imagens/cubo.png" alt="cubo colorido/colorful cube">
+    </aside>
+
+    <button onclick="calcular_cubo()">Calcular</button>
+
+    <p>A área do cubo é <span id="texto-cubo"></span></p>
+
+
+    <script src="js/cubo.js"></script>
+</body>
+</html>

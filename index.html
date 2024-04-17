@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas mágicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        font-family: "Mochiy Pop One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: rgb(192, 175, 153);
+        color: white;
+    }
+
+    .titulo{
+        text-align: center;
+        background-color: cadetblue;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    img {
+        width: 70%;
+        height: 300px;
+        padding-bottom: 20px;
+    }
+
+    main {
+        width: 100%;
+        height: 2000px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    div {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    button{
+        width: 30%;
+        height: 20px;
+        border-radius: 20px;
+        align-items: center;
+        background-color: rgb(252, 209, 178);
+        color: rgb(0, 0, 0);
+        border: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    a:hover{
+        color: rgb(82, 68, 68);
+        transition: 0,3s;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Conheça 3 formas geográficas e calcule suas áreas:</h1>
+    </header>
+
+    <main>
+        <div id="circulo">
+            <h1>Circulo</h1>
+            <img src="imagens/circulo.png" alt="circulo vermelho/red circle">
+            <button><a href="circulo.html">Calcular área</a></button>
+        </div>
+
+        <div id="triangulo">
+            <h1>Triangulo</h1>
+            <img src="imagens/triangulo.png" alt="triangulo laranja/orange triangle">
+            <button><a href="triangulo.html">Calcular área</a></button>
+        </div>
+
+        <div id="cubo">
+            <h1>Cubo</h1>
+            <img src="imagens/cubo.png" alt="cubo colorido/colorful cube">
+            <button><a href="cubo.html">Calcular área</a></button>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
